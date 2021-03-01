@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 :root{
-    --size-nav: 7vh;
+    --size-nav: 5vh;
     --background-color: #fafafa;
-    --font-color-nav: grey;
     --font-color: #fafafa;
     --font-red: #dd5347;
 }
+
+
+/*----------------- Header -------------------*/
 
 html header{
     position: sticky;
@@ -30,31 +34,35 @@ html header nav ul li{
 html header nav ul li a{
     display: flex;
     background-color: var(--background-color);
-    padding: calc((var(--size-nav) - 2.58vh)/2) 1rem;
+    padding: calc((var(--size-nav) - 2.2rem)/2) 1rem;
     text-transform: uppercase;
-    color: var(--font-color-nav);
+    font-family: 'Open Sans', sans-serif;
 }
 
 html header nav ul li:last-child a{
     background-color: var(--font-red);
+    color: var(--font-color);
 }
 
 
 html header h1{
     display: inline-block;
-    vertical-align: 1vh;
-    color: var(--font-color-nav);
+    vertical-align: 0.8vh;
+    color: gray;
 }
 
 html header img{
-    margin-top: calc((var(--size-nav) - 4.35vh)/2);
+    margin-top: calc((var(--size-nav) - 3.30vh)/2);
+    margin-left: 1rem;
 }
+
+/*----------------- Main -------------------*/
 
 main{
     background-image: url(../image/home-hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 50vh 0;
+    padding: 37vh 0;
 }
 
 main h2, main a{
@@ -62,9 +70,10 @@ main h2, main a{
 }
 
 main h2{
-    max-width: 50rem;
     color: #fafafa;
-    font-size: 4rem;
+    font-size: 5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 
 main a{
@@ -74,4 +83,50 @@ main a{
     padding: 2rem 1rem;
     text-transform: uppercase;
     margin-top: 2rem;
+}
+
+/*----------------- Footer -------------------*/
+
+
+
+footer h3, footer p{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+    margin: 5rem;
+}
+
+footer p{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+footer .form{
+    max-width: 70rem;
+    margin:0 auto;
+    margin-bottom: 22rem;
+}
+
+.form fieldset form input, .form fieldset form label{
+    display:block;
+    width: 100%;
+    resize: none;
+}
+.form fieldset form input{
+    line-height: 3.5rem;
+    background-color: rgba(0, 0, 0, 0.05);
+    border:solid 0.1rem transparent;
+    border-bottom-color: #ccc;
+    margin-bottom: 1.0rem;
+}
+
+.form fieldset form input[type="submit"]{
+    width: 30rem;
+    margin: 0 auto;
+    padding: .9rem;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    color: var(--font-color);
+    background-color: #1A73E8;
 }
