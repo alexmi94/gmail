@@ -1,0 +1,77 @@
+:root{
+    --size-nav: 7vh;
+    --background-color: #fafafa;
+    --font-color-nav: grey;
+    --font-color: #fafafa;
+    --font-red: #dd5347;
+}
+
+html header{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
+    background-color: var(--background-color);;
+    height: var(--size-nav);
+}
+
+html header nav ul{
+    text-align: right;
+    float: right;
+    font-size: 0;
+}
+
+html header nav ul li{
+    display: inline-block;
+    font-size: 1.6rem;
+}
+
+
+html header nav ul li a{
+    display: flex;
+    background-color: var(--background-color);
+    padding: calc((var(--size-nav) - 2.58vh)/2) 1rem;
+    text-transform: uppercase;
+    color: var(--font-color-nav);
+}
+
+html header nav ul li:last-child a{
+    background-color: var(--font-red);
+}
+
+
+html header h1{
+    display: inline-block;
+    vertical-align: 1vh;
+    color: var(--font-color-nav);
+}
+
+html header img{
+    margin-top: calc((var(--size-nav) - 4.35vh)/2);
+}
+
+main{
+    background-image: url(../image/home-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50vh 0;
+}
+
+main h2, main a{
+    margin-left: 10rem;
+}
+
+main h2{
+    max-width: 50rem;
+    color: #fafafa;
+    font-size: 4rem;
+}
+
+main a{
+    background-color: var(--font-red);
+    color: #fafafa;
+    display: inline-block;
+    padding: 2rem 1rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
