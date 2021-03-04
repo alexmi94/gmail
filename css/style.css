@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 :root{
-    --size-nav: 5vh;
+    --size-nav: 7vh;
     --background-color: #fafafa;
     --font-color: #fafafa;
     --font-red: #dd5347;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 /*----------------- Header -------------------*/
 
@@ -98,6 +101,11 @@ footer h3, footer p{
     margin: 5rem;
 }
 
+footer h3{
+    padding-top: 7rem;
+}
+
+
 footer p{
     font-size: 1.6rem;
     font-weight: 600;
@@ -130,4 +138,24 @@ footer .form{
     margin-top: 1.5rem;
     color: var(--font-color);
     background-color: #1A73E8;
+}
+
+/*----------------- Arrow -------------------*/
+
+.arrow a img{
+    background-color: var(--font-red);
+    width: 3rem;
+    height: 3rem;
+    padding: .7rem;
+    border-radius: 50%;
+    box-shadow: 0 .5rem 1rem 0 rgba(0, 0, 0, 0.7);
+}
+.arrow{
+    display: block;
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 1rem;
+    z-index: 1;
+    text-align: right;
+    margin-right: 1rem;
 }
