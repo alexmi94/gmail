@@ -20,13 +20,13 @@
                     <legend>Créer un compte</legend>
                     <form action="" method="post">
                         <label for="nom">Nom *</label>
-                        <input type="text" name="nom" id="nom" placeholder="Votre nom">
+                        <input type="text" name="nom" id="nom" placeholder="Votre nom" aria-required="true">
                         <label for="prenom">Prénom *</label>
-                        <input type="text" name="prenom" id="prenom" placeholder="Votre prenom">
-                        <label for="prenom">Mail *</label>
-                        <input type="text" name="mail" id="mail" placeholder="Votre mail">
-                        <label for="prenom">Choisir votre mot de passe *</label>
-                        <input type="text" name="password" id="password" placeholder="Votre mot de passe">
+                        <input type="text" name="prenom" id="prenom" placeholder="Votre prenom" aria-required="true">
+                        <label for="mail">Mail *</label>
+                        <input type="text" name="mail" id="mail" placeholder="Votre mail" aria-required="true">
+                        <label for="password">Choisir votre mot de passe *</label>
+                        <input type="text" name="password" id="password" placeholder="Votre mot de passe" aria-required="true">
                         
                         <input type="submit" value="valider votre compte">
                     </form>

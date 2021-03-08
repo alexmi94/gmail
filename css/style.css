@@ -4,12 +4,13 @@
     --size-nav: 7vh;
     --background-color: #fafafa;
     --font-color: #fafafa;
-    --font-red: #dd5347;
+    --font-red: #9d2b29;
 }
 
 html{
     scroll-behavior: smooth;
 }
+
 
 /*----------------- Header -------------------*/
 
@@ -67,6 +68,7 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     padding: 37vh 0;
+    /*filter: grayscale(50%);*/
 }
 
 main h2, main a{
@@ -137,7 +139,7 @@ footer .form{
     text-transform: uppercase;
     margin-top: 1.5rem;
     color: var(--font-color);
-    background-color: #1A73E8;
+    background-color: #3743cb;
 }
 
 /*----------------- Arrow -------------------*/
