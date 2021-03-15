@@ -15,7 +15,7 @@
     <div class="form" id="form" role="region">
             <fieldset>
                     <legend>Connectez-vous à votre compte</legend>
-                    <form action="" method="post">
+                    <form action="<?php $_SERVER['PHP_SELF']?>" method="post">
                         <label for="mail">Mail ou login*</label>
                         <input type="text" name="mail" id="mail" placeholder="Votre mail" aria-required="true">
                         <label for="password">Mot de passe *</label>

@@ -18,7 +18,7 @@
         <div class="form" id="form" role="region">
             <fieldset>
                     <legend>Créer un compte</legend>
-                    <form action="" method="post">
+                    <form action="<?php $_SERVER['PHP_SELF']?>" method="post">
                         <label for="nom">Nom *</label>
                         <input type="text" name="nom" id="nom" placeholder="Votre nom" aria-required="true">
                         <label for="prenom">Prénom *</label>
