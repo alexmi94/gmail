@@ -43,11 +43,6 @@ html header nav ul li a{
     font-family: 'Open Sans', sans-serif;
 }
 
-html header nav ul li:last-child a{
-    background-color: var(--font-red);
-    color: var(--font-color);
-}
-
 
 html header h1{
     display: inline-block;
@@ -63,7 +58,7 @@ html header img{
 
 /*----------------- Main -------------------*/
 
-main{
+.main_index{
     background-image: url(../image/home-hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -95,7 +90,7 @@ main a{
 
 
 
-footer h3, footer p{
+h3, footer p{
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -113,7 +108,7 @@ footer p{
     font-weight: 600;
 }
 
-footer .form{
+.form{
     max-width: 70rem;
     margin:0 auto;
     margin-bottom: 22rem;
@@ -140,6 +135,7 @@ footer .form{
     margin-top: 1.5rem;
     color: var(--font-color);
     background-color: #3743cb;
+    cursor: pointer;
 }
 
 /*----------------- Arrow -------------------*/
@@ -161,3 +157,11 @@ footer .form{
     text-align: right;
     margin-right: 1rem;
 }
+
+/*----------------- Warning -------------------*/
+
+
+.warning{
+    color: var(--font-red);
+}
+

@@ -3,8 +3,7 @@
     <h1>Gmail</h1>
     <ul>
         <li><a href="">pour les pros</a></li>
-        <li><a href="">connexion</a></li>
-        <li><a href="">créer un compte</a></li>
-        
+        <li><a href="connection.php" class="connexion">connexion</a></li>
+        <li><a href="index.php" class="compte">créer un compte</a></li>
     </ul>
 </nav>

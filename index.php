@@ -8,7 +8,7 @@
         ?>
     </header>
 
-    <main>
+    <main class="main_index">
         <h2>Retrouvez la fluidité et la<br>simplicité de gmail sur<br>tous vos appareil</h2>
         <a href="#createaccount">créer un compte</a>
     </main>

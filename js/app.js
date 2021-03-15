@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
+    let compte = document.getElementsByClassName("compte")[0];
+    compte.style.backgroundColor = "#9d2b29";
+    compte.style.color = "#fafafa";
 
     let forum_nom = document.getElementsByName("nom")[0];
     let forum_prenom = document.getElementsByName("prenom")[0];
@@ -23,22 +26,35 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         storage(){
-            sessionStorage.setItem("nom", this.nom);
+            sessionStorage.setItem("prenom", this.prenom);
         }
 
         setwarning(text){
             let p = document.createElement("p");
+            p.classList.add("warning");
             this.warning.prepend(p);
             p.innerText=text;
         }
 
         verif(){
+            if(!this.nom || !this.prenom || !this.mail || !this.password){
+                this.setwarning("Merci de remplir tous les champs");
+                return
+            }
+
             if(this.mail_check()){
                 this.storage();
-                console.log("ok");
             }else{
                 this.setwarning("Adresse email incorrect");
+                return
             }
+            
+            if(this.password.length < 6){
+                this.setwarning("Mot de passe trop court");
+                return
+            }
+
+            document.location.replace("connection.php");
 
         }
 
