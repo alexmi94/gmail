@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
             p.classList.add("warning");
             this.warning.prepend(p);
             p.innerText=text;
+            event.preventDefault();
         }
 
         verif(){
@@ -54,8 +55,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 return
             }
 
-            document.location.replace("connection.php");
-
         }
 
     }
@@ -64,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     btn.addEventListener("click",(event)=>{
         console.log("click");
-        event.preventDefault();
+        
 
         let objet_form = new form(forum_nom, forum_prenom, forum_mail, forum_password, forum_warning)
         objet_form.verif();

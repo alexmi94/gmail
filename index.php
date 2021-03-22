@@ -18,7 +18,7 @@
         <div class="form" id="form" role="region">
             <fieldset>
                     <legend>Créer un compte</legend>
-                    <form action="<?php $_SERVER['PHP_SELF']?>" method="post">
+                    <form action="./src/bbd_create_account.inc.php" method="post">
                         <label for="nom">Nom *</label>
                         <input type="text" name="nom" id="nom" placeholder="Votre nom" aria-required="true">
                         <label for="prenom">Prénom *</label>
@@ -37,7 +37,8 @@
     <div class="arrow" role="region">
     <a href="#createaccount" ><img src="./image/arrow.png" alt="fleche"></a>
     </div>
-    
+
+
     <script src="./js/app.js"></script>
 
 </body>
