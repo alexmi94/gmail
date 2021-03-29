@@ -30,9 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         setwarning(text){
-            let p = document.createElement("p");
-            p.classList.add("warning");
-            this.warning.prepend(p);
+            let p = document.getElementsByClassName("warning")[0];
             p.innerText=text;
             event.preventDefault();
         }
@@ -49,22 +47,18 @@ document.addEventListener("DOMContentLoaded", () => {
                 this.setwarning("Adresse email incorrect");
                 return
             }
-            
-            if(this.password.length < 6){
+
+            if(this.password.length < 5){
                 this.setwarning("Mot de passe trop court");
                 return
             }
-
         }
-
     }
 
     let btn = document.getElementsByTagName('input')[4];
 
     btn.addEventListener("click",(event)=>{
         console.log("click");
-        
-
         let objet_form = new form(forum_nom, forum_prenom, forum_mail, forum_password, forum_warning)
         objet_form.verif();
         
