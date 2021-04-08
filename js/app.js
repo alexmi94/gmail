@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     let compte = document.getElementsByClassName("compte")[0];
+    console.log(compte);
     compte.style.backgroundColor = "#9d2b29";
     compte.style.color = "#fafafa";
 
@@ -32,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
         setwarning(text){
             let p = document.getElementsByClassName("warning")[0];
             p.innerText=text;
-            event.preventDefault();
+            e.preventDefault();
         }
 
         verif(){
@@ -57,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let btn = document.getElementsByTagName('input')[4];
 
-    btn.addEventListener("click",(event)=>{
+    btn.addEventListener("click",(e)=>{
         console.log("click");
         let objet_form = new form(forum_nom, forum_prenom, forum_mail, forum_password, forum_warning)
         objet_form.verif();
